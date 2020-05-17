@@ -1,0 +1,41 @@
+name: ai-flu-env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - ca-certificates=2019.11.28=hecc5488_0
+  - certifi=2019.11.28=py37hc8dfbb8_1
+  - libcxx=9.0.1=1
+  - libffi=3.2.1=1
+  - ncurses=6.1=h0a44026_1002
+  - openssl=1.1.1e=h0b31af3_0
+  - pip=20.0.2=py_2
+  - python=3.7.6=h90870a6_5_cpython
+  - python_abi=3.7=1_cp37m
+  - readline=8.0=hcfe32e1_0
+  - setuptools=46.1.3=py37hc8dfbb8_0
+  - sqlite=3.30.1=h93121df_0
+  - tk=8.6.10=hbbe82c9_0
+  - wheel=0.34.2=py_1
+  - xz=5.2.4=h0b31af3_1002
+  - zlib=1.2.11=h0b31af3_1006
+  - pip:
+    - cycler==0.10.0
+    - joblib==0.14.1
+    - kiwisolver==1.1.0
+    - lightgbm==2.3.1
+    - matplotlib==3.2.1
+    - numpy==1.18.2
+    - pandas==1.0.3
+    - pyparsing==2.4.6
+    - python-dateutil==2.8.1
+    - pytz==2019.3
+    - scikit-learn==0.22.2.post1
+    - scipy==1.4.1
+    - shap==0.35.0
+    - six==1.14.0
+    - tqdm==4.43.0
+    - seaborn==0.10.1
+prefix: /anaconda3/envs/ai-flu-env
+
