@@ -19,7 +19,7 @@ import pickle
 
 def prep_restrospective_data():
 	# read data
-	all_data = utils.load_unformatted_data('data/expanded_flu_dataset/Version3_Unfiltered/20191105 resp data no filter revised 1 2020.csv', 'data/expanded_flu_dataset/Version3_Unfiltered/Sample_key_csv revised 1 2020.csv')
+	all_data = utils.load_unformatted_data('data/retrospective_influenza_dataset/20191105 resp data no filter revised 1 2020.csv', 'data/retrospective_influenza_dataset/Sample_key_csv revised 1 2020.csv')
 	all_data = utils.map_label_column(all_data)
 	all_data, flu_mapping, subtype_mapping = utils.encode_labels(all_data)
 

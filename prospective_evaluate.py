@@ -37,7 +37,8 @@ def load_and_evaluate_prospective_data(prospective_file):
 	print(d)
 
 print('Evaluating on Validation Cohort Lab 1...')
-load_and_evaluate_prospective_data('validation_cohort_lab_1.csv')
+load_and_evaluate_prospective_data('data/prospective_influenza_dataset/validation_cohort_lab_1.csv')
+print('====================================')
 print('Evaluating on Validation Cohort Lab 2...')
-load_and_evaluate_prospective_data('validation_cohort_lab_2.csv')
+load_and_evaluate_prospective_data('data/prospective_influenza_dataset/validation_cohort_lab_2.csv')
 
