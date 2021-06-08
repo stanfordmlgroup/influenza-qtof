@@ -16,11 +16,13 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler, Po
 import logging
 import pickle
 
+# get LGBM model checkpoint from retrospective training
 with open('prospective_processor.pkl', 'rb') as f:
-    processor = pickle.load(f)
+	processor = pickle.load(f)
 
+# get preprocessor fitted on retrospective data
 with open('prospective_model_output.pkl', 'rb') as f:
-    output = pickle.load(f)
+	output = pickle.load(f)
 
 def load_and_evaluate_prospective_data(prospective_file):
 	prospective_data = pd.read_csv(prospective_file, index_col=0)

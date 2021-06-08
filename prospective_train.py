@@ -62,10 +62,15 @@ def prep_restrospective_data():
 	return train, test
 
 def save_retrospective_models():
+	# Prepare LGBM model trained purely on retrospective data
+	# to be subsequently evaluated on prospective data
+
 	train, test = prep_restrospective_data()
 	X_train, y_train = utils.df_to_array(train)
 	X_test, y_test = utils.df_to_array(test)
 
+	# data preprocessor is fit using retrospective data
+	# but is still used to transform prospective data
 	processor = utils.CustomPreprocessor(transforms = ['quantile'])
 	processor.fit(X_train)
 	norm_X_train = processor.transform(X_train)
